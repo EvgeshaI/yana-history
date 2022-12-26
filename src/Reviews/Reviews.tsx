@@ -33,7 +33,7 @@ export const Reviews = () => {
         <div className={s.reviesBox}>
             <div className={s.myReviewsHeader}>Отзывы</div>
                 <div className={s.carousel}>
-                    <ReactElasticCarousel isRTL={false}  itemsToShow={itemsToShowCount()}>
+                    <ReactElasticCarousel isRTL={false}  itemsToShow={itemsToShowCount()} disableArrowsOnEnd={false}>
                         {state.items.map(item => <div key={item.id}>
                             <img src={require(`../imports/reviewsImg/${item.title}.png`)} className={s.reviewsImg}/>
                         </div>)}
