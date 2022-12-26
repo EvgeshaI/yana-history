@@ -65,13 +65,18 @@ code {
 
 .rec.rec-dot{
   border: 1px solid #F7D9BC;
-  background:none;
+  background: none;
   box-shadow: 0 0 1px 3px rgba(247, 217, 188, 0.4);
 }
+
 .rec.rec-dot:hover{
   box-shadow: 0 0 1px 3px #F7D9BC;
 }
 .rec.rec-dot:focus{
+  background-color: #F7D9BC;
+  box-shadow: 0 0 1px 3px rgba(247, 217, 188, 0.4);
+}
+.rec.rec-dot:active{
   background-color: #F7D9BC;
   box-shadow: 0 0 1px 3px rgba(247, 217, 188, 0.4);
 }

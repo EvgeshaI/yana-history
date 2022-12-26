@@ -1,11 +1,10 @@
 .startBlock{
-    height: 100vh;
     background-color: #F7D9BC;
 }
 .startContainer{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     padding-top: 20px;
 }
 .info{
@@ -16,22 +15,21 @@
     width: 55%;
     font-size: 35px;
     color: #AB3F43;
+    margin: auto;
 }
 .header{
     font-weight: bold;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
+}
+.myName{
+    line-height: 2;
+    font-weight: bold;
 }
 .aboutMe{
     font-size: 20px;
-    padding-top: 30px;
-    width: 50%;
+    padding: 30px 10px 0;
+    min-width: 50%;
     margin: auto;
-}
-.arrow{
-    position: absolute;
-    top: 10%;
-    left: 60%;
-    transform: rotate(100deg);
 }
 .icons {
     padding-top: 50px;
@@ -50,5 +48,29 @@
 }
 .photo{
     width: 45%;
-    /*transition: all 5s ease;*/
+    padding: 20px 5px;
+    margin: auto;
+}
+@media all and (max-width: 1200px){
+    .startContainer{
+        display: block;
+    }
+    .header{
+        padding-bottom: 50px;
+    }
+    .info{
+        width: 100%;
+    }
+    .photo{
+        width: 100%;
+    }
+}
+@media all and (max-width: 600px){
+    .header{
+        line-height: 1.5;
+        font-size: 20px;
+    }
+    .myName{
+        line-height: 1.5;
+    }
 }

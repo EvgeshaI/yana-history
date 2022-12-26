@@ -1,5 +1,4 @@
 .myServices{
-    min-height: 100vh;
     background-color: #F7D9BC;
 }
 .myServicesHeader{
@@ -10,9 +9,6 @@
 }
 .myServicesContainer{
     width: 80%;
-    /*display: grid;*/
-    /*grid-template-columns: repeat(3, 1fr); !*количество колонок 3*!*/
-    /*grid-column-gap: 100px;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -22,7 +18,6 @@
 .myService{
     width: 30%;
     margin: 40px 0;
-    /*grid-column: span 1;*/
 }
 
 .cardImg{
@@ -54,7 +49,7 @@
     overflow: hidden;
 }
 .cardTitleBack{
-    width: 100%;
+    width: 95%;
     border: 1px solid #AB3F43;
     padding: 20px 10px;
     border-radius: 10px;
@@ -74,4 +69,49 @@
 .buttonStyle{
     cursor: pointer;
     padding-top: 10px;
+}
+
+@media all  and (max-width: 1400px){
+    .cardTitleBack{
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+}
+
+@media all  and (max-width: 1250px){
+    .myServicesContainer{
+        width: 70%;
+    }
+    .myService{
+        width: 45%;
+    }
+    .cardTitleBack{
+        font-size: 15px;
+        line-height: 17px;
+    }
+}
+@media all  and (max-width: 1000px){
+    .myServicesContainer{
+        width: 90%
+    }
+}
+@media all  and (max-width: 750px){
+    .myServicesContainer{
+        width: 100%
+    }
+    .myService{
+        width: 60%;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+}
+@media all  and (max-width: 510px){
+    .myService{
+        width: 90%;
+    }
+    .cardTitleBack{
+        font-size: 18px;
+        line-height: 20px;
+    }
 }

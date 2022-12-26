@@ -1,5 +1,4 @@
 .reviesBox{
-    min-height: 100vh;
     background-color: #AB3F43;
 }
 .myReviewsHeader{
@@ -7,16 +6,23 @@
     font-size: 35px;
     font-weight: bold;
     padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 .carousel{
     width: 100%;
     margin: auto;
-    padding: 0 20px;
+    padding: 40px 20px;
+}
+.reviewsImg{
+    width: 300px;
+    padding: 0 10px;
 }
 
-.rec.rec-arrow {
-    border-radius: 0;
-    background-color: #F7D9BC;
+@media all and (max-width: 500px){
+    .carousel{
+        padding: 40px 5px;
+    }
+    .reviewsImg{
+        width: 270px;
+    }
 }

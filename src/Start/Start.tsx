@@ -11,20 +11,21 @@ export const Start = () => {
             <div className={s.startContainer}>
                 <div className={s.info}>
                     <div className={s.header}>ИСТОРИЯ | ОБЩЕСТВОЗНАНИЕ | ЕГЭ</div>
-                    <div style={{lineHeight: 2, fontWeight: "bold"}}>Привет! <br/>
+                    <div className={s.myName}>Привет! <br/>
                         Я Выграновская Яна Олеговна!
                     </div>
                     <div className={s.aboutMe}>
                         Со мной даже троечник сдает на максимум, а путь к 90+ проходит без слез и лишнего стресса!
                     </div>
-                    {/*<div className={s.arrow}><img src={Arrow}/></div>*/}
                     <div className={s.icons}>
-                       <a href={"https://vk.com/yanavygranovska9"}> <div className={s.icon}><Vk/></div></a>
-                        <a href={'https://www.instagram.com/yanavygranovska9/'}><div className={s.icon}><Inst/></div></a>
-                        <a href={'https://t.me/+3rKBb4YT2yVmZDUy'}><div className={s.icon}><Telegram/></div></a>
+                       <a href={"https://vk.com/yanavygranovska9"} target="_blank"> <div className={s.icon}><Vk/></div></a>
+                        <a href={'https://www.instagram.com/yanavygranovska9/'} target="_blank"><div className={s.icon}><Inst/></div></a>
+                        <a href={'https://t.me/+3rKBb4YT2yVmZDUy'} target="_blank"><div className={s.icon}><Telegram/></div></a>
                     </div>
                 </div>
-                <div className={s.photo}><img src={Yana} alt={"Yana"}/></div>
+                <div className={s.photo}>
+                    <img src={Yana} alt={"Yana"} style={{maxWidth: "100%"}}/>
+                </div>
             </div>
         </div>
     )

@@ -3,6 +3,7 @@ import s from "./reviews.module.css"
 import ReactElasticCarousel from "react-elastic-carousel";
 
 export const Reviews = () => {
+    const screenWidth = document.documentElement.scrollWidth
     let state  = {
         items: [
             {id: 1, title: "rev1"},
@@ -17,14 +18,24 @@ export const Reviews = () => {
             {id: 10, title: "rev10"},
             ]
     }
+
+    let itemsToShowCount = () => {
+        if(screenWidth < 770) {
+            return 1
+        }else if(screenWidth < 1030){
+            return 2
+        }else if(screenWidth > 1030){
+            return 3
+        }
+    }
     // @ts-ignore
     return(
         <div className={s.reviesBox}>
             <div className={s.myReviewsHeader}>Отзывы</div>
                 <div className={s.carousel}>
-                    <ReactElasticCarousel isRTL={false}  itemsToShow={3}>
+                    <ReactElasticCarousel isRTL={false}  itemsToShow={itemsToShowCount()}>
                         {state.items.map(item => <div key={item.id}>
-                            <img src={require(`../imports/reviewsImg/${item.title}.png`)} style={{width: "300px"}}/>
+                            <img src={require(`../imports/reviewsImg/${item.title}.png`)} className={s.reviewsImg}/>
                         </div>)}
                     </ReactElasticCarousel>
                 </div>

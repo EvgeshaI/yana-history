@@ -1,5 +1,6 @@
 {
   "name": "yana-history",
+  "homepage": "https://evgeshai.github.io/yana-history-site",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
