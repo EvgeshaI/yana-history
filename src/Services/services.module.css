@@ -1,0 +1,77 @@
+.myServices{
+    min-height: 100vh;
+    background-color: #F7D9BC;
+}
+.myServicesHeader{
+    color: #AB3F43;
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 50px;
+}
+.myServicesContainer{
+    width: 80%;
+    /*display: grid;*/
+    /*grid-template-columns: repeat(3, 1fr); !*количество колонок 3*!*/
+    /*grid-column-gap: 100px;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px auto 0;
+    padding-bottom: 40px;
+}
+.myService{
+    width: 30%;
+    margin: 40px 0;
+    /*grid-column: span 1;*/
+}
+
+.cardImg{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cardPic{
+    width: 100%;
+    transition: 0.15s all;
+}
+
+.cardTitle{
+    width: 90%;
+    border: 1px solid #AB3F43;
+    padding: 20px 0;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    color: #A52A2A;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+}
+.cardTitleBack{
+    width: 100%;
+    border: 1px solid #AB3F43;
+    padding: 20px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    color: #A52A2A;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+}
+.buttonStyle{
+    cursor: pointer;
+    padding-top: 10px;
+}

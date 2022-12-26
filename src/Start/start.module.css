@@ -1,0 +1,54 @@
+.startBlock{
+    height: 100vh;
+    background-color: #F7D9BC;
+}
+.startContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    width: 55%;
+    font-size: 35px;
+    color: #AB3F43;
+}
+.header{
+    font-weight: bold;
+    padding-bottom: 150px;
+}
+.aboutMe{
+    font-size: 20px;
+    padding-top: 30px;
+    width: 50%;
+    margin: auto;
+}
+.arrow{
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    transform: rotate(100deg);
+}
+.icons {
+    padding-top: 50px;
+    display: flex;
+    margin: auto;
+}
+.icon:first-child{
+    margin-right: 20px;
+}
+.icon{
+    cursor: pointer;
+    transition: 0.15s all;
+}
+.icon:hover{
+    transform: scale(1.05);
+}
+.photo{
+    width: 45%;
+    /*transition: all 5s ease;*/
+}

@@ -1,8 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Raleway', 'Grill Sans', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +14,64 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+/*Raleway*/
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  src: local('Raleway'), url(./imports/fonts/raleway/Raleway-Italic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 300;
+  src: local('Raleway'), url(./imports/fonts/raleway/Raleway-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 400;
+  src: local('Raleway'), url(./imports/fonts/raleway/Raleway-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 500;
+  src: local('Raleway'), url(./imports/fonts/raleway/Raleway-Medium.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 600;
+  src: local('Raleway'), url(./imports/fonts/raleway/Raleway-SemiBold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 700;
+  src: local('Raleway'), url(./imports/fonts/raleway/Raleway-Bold.ttf) format('truetype');
+}
+
+.rec.rec-arrow.rec-arrow-left,
+.rec.rec-arrow.rec-arrow-right
+{
+  background-color: rgba(247, 217, 188, 0.4);
+  /*opacity: 0.4;*/
+}
+.rec.rec-arrow.rec-arrow-left:hover,
+.rec.rec-arrow.rec-arrow-right:hover
+{
+  background-color: #F7D9BC !important;
+}
+.rec.rec-arrow.rec-arrow-right:focus,
+.rec.rec-arrow.rec-arrow-left:focus {
+  background-color: #F7D9BC;
+}
+
+.rec.rec-dot{
+  border: 1px solid #F7D9BC;
+  background:none;
+  box-shadow: 0 0 1px 3px rgba(247, 217, 188, 0.4);
+}
+.rec.rec-dot:hover{
+  box-shadow: 0 0 1px 3px #F7D9BC;
+}
+.rec.rec-dot:focus{
+  background-color: #F7D9BC;
+  box-shadow: 0 0 1px 3px rgba(247, 217, 188, 0.4);
 }

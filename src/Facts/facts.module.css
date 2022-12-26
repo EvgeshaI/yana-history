@@ -1,0 +1,28 @@
+.facts{
+    /*height: 100vh;*/
+    background-color: #AB3F43;
+}
+.factsContainer{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 150px 0;
+}
+.factBlock{
+    margin-bottom: 40px;
+}
+.photo{
+    transition: 0.15s all;
+}
+.photo:hover{
+    transform: scale(1.05);
+}
+.factInfo{
+    font-size: 30px;
+    font-weight: bold;
+    color: #F7D9BC;
+    padding-top: 20px;
+}
